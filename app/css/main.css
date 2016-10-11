@@ -1,0 +1,27 @@
+body {
+  background-color: green;
+  color: blue; }
+
+.mainDiv {
+  border-radius: 4px;
+  width: 50px;
+  height: 40px;
+  background-color: blue;
+  box-shadow: 0 0 14px black;
+  box-sizing: border-box; }
+
+i {
+  color: blue; }
+
+a {
+  color: black; }
+
+p {
+  font-size: 32px;
+  font: 'Times';
+  font-weight: bold;
+  color: blue;
+  font-style: italic; }
+
+.mainDiv {
+  color: black; }

@@ -1,0 +1,18 @@
+$color:green;
+
+body{
+	background-color: $color;
+	color:blue;
+}
+.mainDiv{
+	border-radius: 4px;
+	width: 50px;
+	height: 40px;
+	background-color: blue;
+	box-shadow: 0 0 14px black;
+	box-sizing: border-box;
+}
+@import 'colorI';
+.mainDiv{
+	color:black;
+}
