@@ -1,0 +1,23 @@
+stylesheets/
+|
+|-- modules/              # стили для всех разделов
+|   |-- _all.scss         # общий файл с импортами
+|   |-- _variables.scss   # переменные проекта
+|   |-- _colors.scss      # цвета
+|   ...
+|
+|-- partials/             # Partials (структурные элементы)
+|   |-- _base.sass        # импорты миксинов, переменных
+|   |-- _buttons.scss     # кнопки
+|   |-- _images.scss      # изображения
+|   |-- _grids.scss       # блочная вёрстка
+|   |-- _typography.scss  # тексты
+|   |-- _reset.scss       # резет стандартных стилей
+|   ...
+|
+|-- vendor/               # CSS или Sass из библиотек и плагинов
+|   |-- _colorpicker.scss
+|   |-- _jquery.ui.core.scss
+|   ...
+|
+`-- main.scss             # главный Sass-файл
