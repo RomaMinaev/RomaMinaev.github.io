@@ -1,4 +1,5 @@
 /*baseScss*/
+/*Fonts*/
 @font-face {
   font-family: 'Helvetica';
   src: url("../fonts/Helvetica.otf"), url("../fonts/helvetica-webfont.woff2") format("woff2"), url("../fonts/helvetica-webfont.woff") format("woff");
@@ -34,6 +35,3 @@
   src: url("../fonts/Quicksand-Bold.otf"), url("../fonts/quicksand-bold-webfont.woff2") format("woff2"), url("../fonts/quicksand-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
-
-p {
-  font: 16px 'NexaBold',sans-serif; }
