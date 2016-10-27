@@ -1,0 +1,31 @@
+.logo{
+  display:inline-block;
+  font:1.2em $font-heavy;
+  text-align: center;
+  width: 6.7em;
+  padding:0.9em 0;
+  background-color: $second-color;
+  color: white;
+    .triangle-logo{
+      position: absolute;
+      bottom:1.35em;
+      left:7.8em;
+      border:1.4em solid transparent;
+      border-left:1.4em solid $second-color;
+	  }
+}
+.newsletter{
+ 
+}
+.main-title{
+  display:inline-block;
+  color:white;
+  font:1.8em $font-icons;
+  padding-top:1.4em;
+  padding-left:1em;
+}
+.background-logo{
+  background-color: $primary-color;
+}
+
+

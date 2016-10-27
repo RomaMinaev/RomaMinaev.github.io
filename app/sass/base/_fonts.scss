@@ -36,6 +36,15 @@
 }
 
 @font-face {
+  font-family: 'NexaLight';
+  src: url('../fonts/NexaLight.otf'),
+    url('../fonts/nexa_light-webfont.woff') format('woff2'),
+    url('../fonts/nexa_light-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'NexaRegular';
   src: url('../fonts/NexaRegular.otf'),
     url('../fonts/nexaregular-webfont.woff2') format('woff2'),
