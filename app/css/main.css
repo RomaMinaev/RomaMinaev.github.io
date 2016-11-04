@@ -1,6 +1,17 @@
 /*baseScss*/
-/* reset-css */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -9,7 +20,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
@@ -21,10 +33,7 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after {
-  content: '';
-  content: none; }
-
+blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
@@ -76,12 +85,26 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+* {
+  box-sizing: border-box; }
+
 body {
+  overflow-x: hidden;
   font: 62.5% "NexaBold", sans-serif;
-  box-sizing: border-box;
   background-color: #ebebeb; }
 
-p, ul {
+button {
+  border: none;
+  outline: none; }
+
+a {
+  color: white; }
+
+a:hover {
+  color: white;
+  text-decoration: none; }
+
+p, li {
   font-size: 1.2em; }
 
 h1 {
@@ -94,31 +117,137 @@ h3 {
   font-size: 1.8em; }
 
 /*modules*/
+/*Header*/
+.button-arrow-reverse {
+  font: 0.91em 'QuicksandBold',sans-serif;
+  display: inline-block;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.header {
+  color: white;
+  white-space: nowrap; }
+  .header .activate-mobile-menu {
+    display: none; }
+    .header .activate-mobile-menu .bars-menu {
+      font-size: 4em;
+      background-color: #373737;
+      margin-top: 0.35em; }
+
+/*logo-newsletter-contact*/
 .logo {
   display: inline-block;
   font: 1.2em "NexaHeavy", sans-serif;
   text-align: center;
   width: 6.7em;
-  padding: 0.9em 0;
-  background-color: #f26c4f;
-  color: white; }
+  padding: 1.2em 0;
+  background-color: #f26c4f; }
   .logo .triangle-logo {
     position: absolute;
-    bottom: 1.35em;
-    left: 7.8em;
+    bottom: 1.7em;
+    left: 7.6em;
     border: 1.4em solid transparent;
     border-left: 1.4em solid #f26c4f; }
 
 .main-title {
   display: inline-block;
-  color: white;
   font: 1.8em "NexaRegular", sans-serif;
   padding-top: 1.4em;
   padding-left: 1em; }
 
-.background-logo {
+.background-color-logo {
   background-color: #373737; }
 
+.newsletter {
+  font: 1.2em "NexaBold", sans-serif; }
+
+.button-logo {
+  box-shadow: 0 1px 1px #262626;
+  margin: 1.4em 1.6em 0 0;
+  background-color: white;
+  display: inline-block;
+  color: #8f8f8f;
+  padding-left: 1.5em; }
+  .button-logo i {
+    color: #f26c4f;
+    display: inline-block;
+    font-size: 1.4em;
+    margin: 0 0.8em 0.50em 0;
+    vertical-align: bottom; }
+  .button-logo p {
+    display: inline-block;
+    margin: 0.4em 2.5em 0 0; }
+  .button-logo button {
+    border-bottom: 1px solid #d8d8d8;
+    background-color: #ebebeb;
+    width: 3em;
+    height: 3em; }
+  .button-logo button:hover {
+    color: #f26c4f; }
+
+/*desktop-menu*/
+.background-color-menu {
+  background-color: #474747; }
+
+.desktop-menu {
+  overflow: hidden;
+  font-family: "NexaBold", sans-serif; }
+  .desktop-menu ul {
+    padding-top: 2.4em;
+    height: 70px; }
+  .desktop-menu i {
+    margin-left: 1.75em;
+    font-size: 1.9em;
+    display: inline-block;
+    color: #f26c4f; }
+  .desktop-menu li {
+    margin-left: 3em;
+    border-left: 1px #767676;
+    padding-bottom: 1.9em;
+    display: inline-block; }
+  .desktop-menu li:hover {
+    border-bottom: 0.3em solid #f26c4f; }
+
+.quicklinks {
+  padding-top: 2.4em;
+  padding-left: 5.1em; }
+  .quicklinks p {
+    display: inline-block;
+    margin-right: 1em; }
+  .quicklinks i {
+    color: #f26c4f;
+    font-size: 1.9em;
+    margin-right: 2.4em; }
+  .quicklinks button:hover {
+    color: #f26c4f; }
+  .quicklinks .button-arrow-reverse {
+    background-color: #474747; }
+
+/*responsive*/
+@media screen and (max-width: 991px) {
+  .header .newsletter {
+    display: none; }
+  .header .desktop-menu {
+    display: none; }
+  .header .quicklinks {
+    display: none; }
+  .header .activate-mobile-menu {
+    display: inline-block; }
+  .header .bars-menu {
+    display: inline-block; } }
+
 @media screen and (max-width: 768px) {
-  .newsletter {
-    display: none; } }
+  .header .bars-menu {
+    float: right; }
+  .header .activate-mobile-menu {
+    position: absolute;
+    margin-right: -5px; } }
+
+.clear-block {
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden; }

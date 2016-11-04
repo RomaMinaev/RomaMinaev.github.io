@@ -59,7 +59,7 @@ gulp.task('browser-sync',function(){//task browser-sync
 ;
 gulp.task('watch',['browser-sync','sass'],function(){//Автоматическая компиляция SCSS ['browser-sync',sass]
 	//Выполнение до watch в ['']!!!{
-    gulp.watch('app/sass/*.scss',['sass']);
+    gulp.watch('app/sass/**/*.scss',['sass']);
 	gulp.watch('app/css/main.css');
 	gulp.watch('app/*.html',browserSync.reload);
 	gulp.watch('app/js/*/*.js',browserSync.reload);//Перезагрузка страницы при изменении html

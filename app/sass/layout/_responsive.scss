@@ -1,5 +1,29 @@
-@media screen and (max-width:768px){
-	.newsletter{
-		display:none;
+/*responsive*/
+@media screen and (max-width: 991px){
+  .header{
+    .newsletter{
+      display: none;
+    }
+    .desktop-menu{
+    	display: none;
+    }
+    .quicklinks{
+    	display: none;
+    }
+    .activate-mobile-menu{
+    	display: inline-block;
+    }
+    .bars-menu{
+    	display:inline-block;
+    }
+  }
+}
+@media screen and (max-width: 768px){
+	.header .bars-menu{
+		float:right;
 	}
+  .header .activate-mobile-menu{
+  	position:absolute;
+  	margin-right: -5px;
+  }
 }

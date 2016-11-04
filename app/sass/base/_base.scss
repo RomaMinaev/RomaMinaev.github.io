@@ -1,9 +1,23 @@
-body{
-  font: 62.5% $main-font;
+*{
   box-sizing: border-box;
+}
+body{
+  overflow-x:hidden;
+  font: 62.5% $main-font;
   background-color: $background-color;
 }
-p,ul{
+button{
+  border: none;
+  outline: none;
+}
+a{
+	color:white;
+}
+a:hover{
+	color:white;
+	text-decoration: none;
+}
+p,li{
   font-size: 1.2em;
 }
 h1{
